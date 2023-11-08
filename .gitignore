@@ -1,0 +1,12 @@
+# Ignore Node.js and NPM/Yarn files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore Compiled CSS files
+dist/
+
+# Ignore development and cache files
+.postcssrc.js
+.postcssrc.json
+.cache/
