@@ -1,0 +1,18 @@
+# Ignore generated build files
+/dist/
+/public/
+
+# Ignore node_modules directory
+/node_modules/
+
+# Ignore npm logs
+npm-debug.log*
+
+# Ignore Yarn integrity file
+.yarn-integrity
+
+# Ignore Tailwind CSS configuration file if it's being generated
+tailwind.config.js
+
+# Ignore any local development environment files
+.env
