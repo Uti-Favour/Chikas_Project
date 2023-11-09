@@ -15,6 +15,24 @@
     font-family: 'Roboto', sans-serif; */
 }
 
+/* ========Background Colour====== */
 body{
     background-color: black;
 }
+
+/* insights section grid */
+.insight-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .insights {
+    padding: 110px 30px;
+  }
+  
+  @media (max-width: 767px) {
+    .insights {
+      padding: 30px 25px;
+    }
+  }
