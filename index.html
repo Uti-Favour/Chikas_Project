@@ -11,27 +11,57 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-
-     <!-- Video Container -->
-  <div class="relative h-screen">
-    <!-- Video Background -->
-    <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
-      <source src="Videos/Video-3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-
-    <!-- Your Content -->
-    <div class="absolute inset-0 flex items-center justify-center">
-      <h1 class="text-white text-4xl font-bold">Your Content Goes Here</h1>
+      <!-- Navigation Bar -->
+  <nav class="bg-transparent p-4 flex items-center justify-between fixed w-full top-0 z-50" id="navbar">
+    <!-- Logo (Left) -->
+    <div class="text-white">
+      <img src="logo.png" alt="Logo" class="h-8">
     </div>
-  </div>
+
+    <!-- Menu (Center) -->
+    <ul class="flex space-x-4">
+      <li><a href="#" class="text-white">Home</a></li>
+      <li><a href="#" class="text-white">About</a></li>
+      <li><a href="#" class="text-white">Services</a></li>
+      <li><a href="#" class="text-white">Contact</a></li>
+    </ul>
+
+    <!-- Get Started Button (Right) -->
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-full">Get Started</button>
+  </nav>
+    <!-- Video Container -->
+    <div class="relative h-screen">
+      <!-- Video Background -->
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="Videos/Video-3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Your Content -->
+      <div class="absolute inset-0 flex top-80 left-32">
+        <h1 class="text-white text-6xl font-semibold max-w-3xl">
+            Creating safe AGI that benefits all of humanity
+        </h1>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
