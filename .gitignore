@@ -1,18 +1,14 @@
-# Ignore generated build files
-/dist/
-/public/
 
-# Ignore node_modules directory
-/node_modules/
+# Ignore Node.js and NPM/Yarn files
+node_modules/
+package-lock.json
+yarn.lock
 
-# Ignore npm logs
-npm-debug.log*
+# Ignore Compiled CSS files
+dist/
 
-# Ignore Yarn integrity file
-.yarn-integrity
+# Ignore development and cache files
+.postcssrc.js
+.postcssrc.json
+.cache/
 
-# Ignore Tailwind CSS configuration file if it's being generated
-tailwind.config.js
-
-# Ignore any local development environment files
-.env
