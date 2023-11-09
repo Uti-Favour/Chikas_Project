@@ -21,24 +21,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-      <!-- Navigation Bar -->
-  <nav class="bg-transparent p-4 flex items-center justify-between fixed w-full top-0 z-50" id="navbar">
-    <!-- Logo (Left) -->
-    <div class="text-white">
-      <img src="logo.png" alt="Logo" class="h-8">
-    </div>
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-transparent p-4 flex items-center justify-between fixed w-full top-0 z-50"
+      id="navbar"
+    >
+      <!-- Logo (Left) -->
+      <div class="text-white">
+        <img src="Image/prime logo white.png" alt="Logo" class="h-10" />
+      </div>
 
-    <!-- Menu (Center) -->
-    <ul class="flex space-x-4">
-      <li><a href="#" class="text-white">Home</a></li>
-      <li><a href="#" class="text-white">About</a></li>
-      <li><a href="#" class="text-white">Services</a></li>
-      <li><a href="#" class="text-white">Contact</a></li>
-    </ul>
+      <!-- Menu (Center) -->
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-white text-lg hover:underline">Home</a></li>
+        <li><a href="#" class="text-lg text-white hover:underline">About</a></li>
+        <li><a href="#" class="text-white text-lg hover:underline">Services</a></li>
+        <li><a href="#" class="text-white text-lg hover:underline">Contact</a></li>
+      </ul>
 
-    <!-- Get Started Button (Right) -->
-    <button class="bg-blue-500 text-white px-4 py-2 rounded-full">Get Started</button>
-  </nav>
+      <!-- Get Started Button (Right) -->
+      <button
+        class="bg-transparent text-white px-10 py-3 mr-4 rounded-xl border-2"
+      >
+        Get Started
+      </button>
+    </nav>
     <!-- Video Container -->
     <div class="relative h-screen">
       <!-- Video Background -->
@@ -58,8 +65,11 @@
       <!-- Your Content -->
       <div class="absolute inset-0 flex top-80 left-32">
         <h1 class="text-white text-6xl font-semibold max-w-3xl">
-            Creating safe AGI that benefits all of humanity
+          Creating safe AGI that benefits all of humanity
         </h1>
+      </div>
+      <div class="absolute inset-x-0 bottom-16 left-32">
+        <button class="bg-transparent text-white px-6 py-3 rounded-xl border-2">Learn about Chikason</button>
       </div>
     </div>
     <script src="script.js"></script>
