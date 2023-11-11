@@ -32,3 +32,8 @@ body {
     padding: 30px 25px;
   }
 }
+
+
+nav{
+  display: none;
+}
