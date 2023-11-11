@@ -27,10 +27,6 @@ body {
   padding: 110px 30px;
 }
 
-.flex-move li:nth-child(odd) {
-  margin-left: -20px; /* Adjust the value as needed */
-}
-
 @media (max-width: 767px) {
   .insights {
     padding: 30px 25px;
@@ -38,3 +34,6 @@ body {
 }
 
 
+nav{
+  display: none;
+}
