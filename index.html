@@ -50,9 +50,19 @@
     <!-- ---end--- -->
 
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your Video Page</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
     <!-- Video Container -->
     <div class="relative h-screen">
-      <!-- Video Background -->
+    
       <video
         autoplay
         loop
@@ -62,22 +72,27 @@
         <source src="Videos/Video-3.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
+    
       <!-- Dark Overlay -->
       <div class="absolute inset-0 bg-black opacity-50"></div>
-
+    
       <!-- Your Content -->
-      <div class="absolute inset-0 flex top-80 left-48">
-        <h1 class="text-white text-6xl font-semibold max-w-3xl">
+      <div class="hero-text">
+      <div class="absolute flex sm:top-80 sm:left-48 ">
+        <h1 class="text-white text-4xl relative sm:text-6xl font-semibold max-w-3xl sm:hero-media">
           Creating safe AGI that benefits all of humanity
         </h1>
       </div>
-      <div class="absolute inset-x-0 bottom-16 left-48 ">
+      </div>
+      <div class="absolute inset-x-0 sm:bottom-16 sm:left-48 ">
         <button class="bg-transparent text-white px-6 py-3 rounded-xl border-2 hover:bg-white hover:text-black">Learn about Chikason <i class="fa-solid fa-arrow-up-right-from-square"></i></i>
         </button>
       </div>
     </div>
-
+    
+    </body>
+    </html>
+    
     <!-- =========Offers======== -->
     <div class="insight-row text-white">
         <div class="insights">
