@@ -37,3 +37,15 @@ body {
 nav{
   display: none;
 }
+
+
+/* ===Hero section media query=== */
+@media (min-width: 640px){
+  .hero-text-section{
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+  }
+}
+
+
