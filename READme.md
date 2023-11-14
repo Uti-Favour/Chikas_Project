@@ -2,7 +2,6 @@
 
 Welcome to Chikason Ultimate! This repository contains the source code for Chikason Ultimate's media and laundry website.
 
-![Chikason Ultimate Logo](link_to_logo.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
