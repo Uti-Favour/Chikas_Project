@@ -3,5 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var navbar = document.getElementById("navbar");
     navbar.classList.toggle("scrolled", window.scrollY > 0);
   });
+
+  
 });
 
