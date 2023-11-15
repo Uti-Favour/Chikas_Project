@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   
+ let hero =  document.getElementsByClassName("hero");
 });
 
