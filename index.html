@@ -1,385 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chikason Ultimate Service</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chikason Ultimate Service</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <div class="bg-white">
-    
-
-    <div class="relative isolate px-6 lg:px-8 hero">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true">
+  <body>
+    <div class="bg-gray-900">
+      <!-- === Hero Section === -->
+      <div class="relative isolate px-6 lg:px-8 hero">
         <div
-          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
-      <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
-        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
           <div
-            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span
-                class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+        <div class="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div
+              class="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white hover:ring-white/100"
+            >
+              Announcing our next round of funding.
+              <a href="#" class="font-semibold text-indigo-600"
+                ><span class="absolute inset-0" aria-hidden="true"></span>Read
+                more <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
           </div>
-        </div>
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Elevate your laundry experience with
-            Chikason Ultimate.</h1>
+          <div class="text-center">
+            <h1
+              class="text-5xl font-extrabold tracking-tight text-white sm:text-6xl"
+            >
+            The ultimate laundry solution, embraced by users worldwide.
+            </h1>
 
-          <p class="mt-6 text-lg leading-8 text-gray-600">Immerse yourself in the extraordinary world of Chikason
-            Ultimate. Our meticulous attention to every detail ensures a superior and making each wash a moment of sheer
-            excellence.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-              started</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-
-
-  <!-- === Laundry Services Features === -->
-  <div class="overflow-hidden bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-        <div class="lg:pr-8 lg:pt-4">
-          <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-indigo-600">Effortless Cleaning</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simplified Laundry Process</p>
-            <p class="mt-6 text-lg leading-8 text-gray-600">Discover the ease of our laundry service. From drop-off to
-              pickup, your garments are handled with care and precision, making laundry day a breeze.</p>
-            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-gray-900">
-                  <i class="fas fa-clock text-indigo-600"></i>
-                  Time-Saving Solutions.
-                </dt>
-                <dd class="inline">Experience quick and efficient laundry service, saving you time and ensuring your
-                  clothes are ready when you need them.</dd>
-              </div>
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-gray-900">
-                  <i class="fas fa-shield-alt text-indigo-600"></i>
-                  Secure Garment Care.
-                </dt>
-                <dd class="inline">Our laundry service ensures the security of your garments, providing a shield of
-                  protection against wear and tear.</dd>
-              </div>
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-gray-900">
-                  <i class="fas fa-recycle text-indigo-600"></i>
-                  Eco-Friendly Practices.
-                </dt>
-                <dd class="inline">Embrace sustainable laundry with our eco-friendly practices, contributing to a
-                  greener and cleaner environment.</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <img src="Image/laundry-6.jpg" alt="Laundry Service"
-          class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-          width="2432" height="1442">
-      </div>
-    </div>
-  </div>
-
-
-  <!-- === Stats === -->
-  <div class="bg-gray-900  py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base leading-7 text-gray-300">Transactions every 24 hours</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">44 million</dd>
-        </div>
-        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base leading-7 text-gray-300">Assets under holding</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">$119 trillion</dd>
-        </div>
-        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base leading-7 text-gray-300">New users annually</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">46,000</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-
-
-  <!-- === Laundry Content Page === -->
-  <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-      <svg
-        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-        aria-hidden="true">
-        <defs>
-          <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
-            patternUnits="userSpaceOnUse">
-            <path d="M100 200V.5M.5 .5H200" fill="none" />
-          </pattern>
-        </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-            stroke-width="0" />
-        </svg>
-        <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
-      </svg>
-    </div>
-    <div
-      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-      <div
-        class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div class="lg:pr-4">
-          <div class="lg:max-w-lg">
-            <p class="text-base font-semibold leading-7 text-indigo-600">Effortless Laundry</p>
-            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simplified Washing Process</h1>
-            <p class="mt-6 text-xl leading-8 text-gray-700">Discover the simplicity of our laundry service. Our
-              efficient workflow ensures your clothes are handled with care, providing a hassle-free washing experience.
+            <p class="mt-6 text-lg leading-8 text-white">
+              Immerse yourself in the extraordinary world of Chikason Ultimate.
+              Our meticulous attention to every detail ensures a superior and
+              making each wash a moment of sheer excellence.
             </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Get started</a
+              >
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+                >Learn more <span aria-hidden="true">→</span></a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-        <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-          src="Image/laundry-7.jpg" alt="Laundry Service">
-      </div>
-      <div
-        class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div class="lg:pr-4">
-          <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-            <p>Experience the soothing rhythm of our laundry services, where every wash is a symphony of care and
-              precision. Our commitment to quality ensures that your garments receive the attention they deserve, from
-              the gentle embrace of our washing process to the meticulous folding at the end. Discover the tranquility
-              of hassle-free laundry with Chikason Ultimate Service.</p>
-
-            <ul role="list" class="mt-8 space-y-8 text-gray-600">
-              <li class="flex gap-x-3">
-                <i class="fas fa-soap mt-1 h-5 w-5 flex-none text-indigo-600"></i>
-                <span>
-                  <strong class="font-semibold text-gray-900">Gentle Care.</strong>
-                  Our laundry process ensures gentle care for your clothes, preserving their quality and extending their
-                  lifespan.
-                </span>
-              </li>
-              <li class="flex gap-x-3">
-                <i class="fas fa-tshirt mt-1 h-5 w-5 flex-none text-indigo-600"></i>
-                <span>
-                  <strong class="font-semibold text-gray-900">Diverse Fabric Support.</strong>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
-                </span>
-              </li>
-              <li class="flex gap-x-3">
-                <i class="fas fa-check-circle mt-1 h-5 w-5 flex-none text-indigo-600"></i>
-                <span>
-                  <strong class="font-semibold text-gray-900">Quality Assurance.</strong>
-                  Our laundry service undergoes rigorous quality checks to ensure your satisfaction with every wash.
-                </span>
-              </li>
-            </ul>
-            <p class="mt-8">Immerse yourself in the seamless blend of efficiency and comfort with our laundry services.
-              Our commitment to excellence ensures a smooth and hassle-free experience. From the gentle touch in
-              handling your garments to the meticulous attention in every step, trust Chikason Ultimate Service for
-              laundry that combines practicality with indulgence.</p>
-            <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Eco-Friendly Practices.</h2>
-            <p class="mt-6">Indulge in the art of carefree laundry with us. Bid farewell to worries as our expert team
-              handles each garment with precision and dedication. Experience the elegance of our services, where every
-              wash is a testament to quality and satisfaction. Trust Chikason Ultimate Service for laundry that
-              transcends the ordinary, leaving you with garments that radiate freshness and comfort.</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- === Laundry Pricing === -->
-  <div class="bg-gray-900 py-16 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Transparent pricing for laundry solutions
-        </h2>
-        <p class="mt-6 text-lg leading-8 text-white">Discover straightforward pricing for top-notch laundry services.
-          Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
-      </div>
-      <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-        <div class="p-8 sm:p-10 lg:flex-auto">
-          <h3 class="text-2xl font-bold tracking-tight text-white">Premium Laundry Membership</h3>
-          <p class="mt-6 text-base leading-7 text-gray-300">Lorem ipsum dolor sit amet consect etur adipisicing elit.
-            Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
-          <div class="mt-10 flex items-center gap-x-4">
-            <h4 class="flex-none text-sm font-semibold leading-6 text-white">What’s included</h4>
-            <div class="h-px flex-auto bg-gray-100"></div>
-          </div>
-          <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-            <li class="flex gap-x-3 text-white">
-              <i class="fas fa-users h-6 w-5 flex-none text-indigo-600"></i>
-              Access to exclusive laundry tips
-            </li>
-            <li class="flex gap-x-3 text-white">
-              <i class="fas fa-tshirt h-6 w-5 flex-none text-indigo-600"></i>
-              Member-only laundry resources
-            </li>
-            <li class="flex gap-x-3 text-white">
-              <i class="fas fa-calendar-alt h-6 w-5 flex-none text-indigo-600"></i>
-              Entry to annual laundry conference
-            </li>
-            <li class="flex gap-x-3 text-white">
-              <i class="fas fa-tshirt h-6 w-5 flex-none text-indigo-600"></i>
-              Official laundry enthusiast t-shirt
-            </li>
-          </ul>
-        </div>
-        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
           <div
-            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <div class="mx-auto max-w-xs px-8">
-              <p class="text-base font-semibold text-gray-600">One-time payment for a laundry revolution</p>
-              <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$149</span>
-                <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- === Laundry Services Features === -->
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-indigo-600">
+                Effortless Cleaning
+              </h2>
+              <p
+                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Simplified Laundry Process
               </p>
-              <a href="#"
-                class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Upgrade
-                Now</a>
-              <p class="mt-6 text-xs leading-5 text-gray-600">Invoices and receipts available for easy company
-                reimbursement</p>
+              <p class="mt-6 text-lg leading-8 text-gray-600">
+                Discover the ease of our laundry service. From drop-off to
+                pickup, your garments are handled with care and precision,
+                making laundry day a breeze.
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <i class="fas fa-clock text-indigo-600"></i>
+                    Time-Saving Solutions.
+                  </dt>
+                  <dd class="inline">
+                    Experience quick and efficient laundry service, saving you
+                    time and ensuring your clothes are ready when you need them.
+                  </dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <i class="fas fa-shield-alt text-indigo-600"></i>
+                    Secure Garment Care.
+                  </dt>
+                  <dd class="inline">
+                    Our laundry service ensures the security of your garments,
+                    providing a shield of protection against wear and tear.
+                  </dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <i class="fas fa-recycle text-indigo-600"></i>
+                    Eco-Friendly Practices.
+                  </dt>
+                  <dd class="inline">
+                    Embrace sustainable laundry with our eco-friendly practices,
+                    contributing to a greener and cleaner environment.
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
+          <img
+            src="Image/laundry-6.jpg"
+            alt="Laundry Service"
+            class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            width="2432"
+            height="1442"
+          />
         </div>
       </div>
     </div>
-  </div>
 
-
-  <!-- === Partner Logo === -->
-  <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams
-      </h2>
-      <div
-        class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158"
-          height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
-          height="48">
-        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
-          height="48">
-      </div>
-    </div>
-  </div>
-
-  <!-- === Laundry Newsletter === -->
-  <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-        <div class="max-w-xl lg:max-w-lg">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our laundry updates.</h2>
-          <p class="mt-4 text-lg leading-8 text-gray-300">Enhance your laundry experience with our latest insights. Duis
-            tempor incididunt dolore.</p>
-          <div class="mt-6 flex max-w-md gap-x-4">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email" type="email" autocomplete="email" required
-              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-              placeholder="Enter your email">
-            <button type="submit"
-              class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+    <!-- === Stats === -->
+    <div class="bg-gray-900 py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <dl
+          class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3"
+        >
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-300">
+              Transactions every 24 hours
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl"
+            >
+              44 million
+            </dd>
           </div>
-        </div>
-        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
-          <div class="flex flex-col items-start">
-            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-              <i class="fas fa-tshirt h-6 w-6 text-white"></i>
-            </div>
-            <dt class="mt-4 font-semibold text-white">Weekly laundry tips</dt>
-            <dd class="mt-2 leading-7 text-gray-400">Discover non laboris consequat cupidatat laborum magna. Eiusmod non
-              irure cupidatat duis commodo amet.</dd>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-300">
+              Assets under holding
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl"
+            >
+              $119 trillion
+            </dd>
           </div>
-          <div class="flex flex-col items-start">
-            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-              <i class="fas fa-ban h-6 w-6 text-white"></i>
-            </div>
-            <dt class="mt-4 font-semibold text-white">No laundry spam</dt>
-            <dd class="mt-2 leading-7 text-gray-400">Experience officia excepteur ullamco ut sint duis proident non
-              adipisicing. Voluptate incididunt anim.</dd>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-300">
+              New users annually
+            </dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl"
+            >
+              46,000
+            </dd>
           </div>
         </dl>
       </div>
     </div>
-    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>
-  </div>
 
-
-  <!-- === Footer === -->
-  <!-- === Responsive Laundry Footer === -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center">
-      <div class="text-center lg:text-left mb-6 lg:mb-0">
-        <h3 class="text-xl font-bold">Stay Fresh Laundry</h3>
-        <p class="mt-2 text-sm">Your go-to for premium laundry services.</p>
+    <!-- === Laundry Content Page === -->
+    <div
+      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+    >
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <svg
+          class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+              width="200"
+              height="200"
+              x="50%"
+              y="-1"
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+            <path
+              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+              stroke-width="0"
+            />
+          </svg>
+          <rect
+            width="100%"
+            height="100%"
+            stroke-width="0"
+            fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+          />
+        </svg>
       </div>
-      <div class="text-center mb-6 lg:mb-0">
-        <h4 class="text-lg font-bold mb-2">Connect With Us</h4>
-        <div class="flex items-center justify-center lg:justify-start space-x-4">
-          <a href="#" class="text-gray-300 hover:text-white">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-white">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-white">
-            <i class="fab fa-instagram"></i>
-          </a>
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
+      >
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+        >
+          <div class="lg:pr-4">
+            <div class="lg:max-w-lg">
+              <p class="text-base font-semibold leading-7 text-indigo-600">
+                Effortless Laundry
+              </p>
+              <h1
+                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Simplified Washing Process
+              </h1>
+              <p class="mt-6 text-xl leading-8 text-gray-700">
+                Discover the simplicity of our laundry service. Our efficient
+                workflow ensures your clothes are handled with care, providing a
+                hassle-free washing experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+        >
+          <img
+            class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            src="Image/laundry-7.jpg"
+            alt="Laundry Service"
+          />
+        </div>
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+        >
+          <div class="lg:pr-4">
+            <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <p>
+                Experience the soothing rhythm of our laundry services, where
+                every wash is a symphony of care and precision. Our commitment
+                to quality ensures that your garments receive the attention they
+                deserve, from the gentle embrace of our washing process to the
+                meticulous folding at the end. Discover the tranquility of
+                hassle-free laundry with Chikason Ultimate Service.
+              </p>
+
+              <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                <li class="flex gap-x-3">
+                  <i
+                    class="fas fa-soap mt-1 h-5 w-5 flex-none text-indigo-600"
+                  ></i>
+                  <span>
+                    <strong class="font-semibold text-gray-900"
+                      >Gentle Care.</strong
+                    >
+                    Our laundry process ensures gentle care for your clothes,
+                    preserving their quality and extending their lifespan.
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <i
+                    class="fas fa-tshirt mt-1 h-5 w-5 flex-none text-indigo-600"
+                  ></i>
+                  <span>
+                    <strong class="font-semibold text-gray-900"
+                      >Diverse Fabric Support.</strong
+                    >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maiores impedit perferendis suscipit eaque, iste dolor
+                    cupiditate blanditiis ratione.
+                  </span>
+                </li>
+                <li class="flex gap-x-3">
+                  <i
+                    class="fas fa-check-circle mt-1 h-5 w-5 flex-none text-indigo-600"
+                  ></i>
+                  <span>
+                    <strong class="font-semibold text-gray-900"
+                      >Quality Assurance.</strong
+                    >
+                    Our laundry service undergoes rigorous quality checks to
+                    ensure your satisfaction with every wash.
+                  </span>
+                </li>
+              </ul>
+              <p class="mt-8">
+                Immerse yourself in the seamless blend of efficiency and comfort
+                with our laundry services. Our commitment to excellence ensures
+                a smooth and hassle-free experience. From the gentle touch in
+                handling your garments to the meticulous attention in every
+                step, trust Chikason Ultimate Service for laundry that combines
+                practicality with indulgence.
+              </p>
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+                Eco-Friendly Practices.
+              </h2>
+              <p class="mt-6">
+                Indulge in the art of carefree laundry with us. Bid farewell to
+                worries as our expert team handles each garment with precision
+                and dedication. Experience the elegance of our services, where
+                every wash is a testament to quality and satisfaction. Trust
+                Chikason Ultimate Service for laundry that transcends the
+                ordinary, leaving you with garments that radiate freshness and
+                comfort.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="text-center lg:text-right">
-        <h4 class="text-lg font-bold mb-2">Contact Us</h4>
-        <p class="text-sm">123 Laundry Lane, Fresh City</p>
-        <p class="text-sm">Email: info@stayfreshlaundry.com</p>
+    </div>
+
+    <!-- === Laundry Pricing === -->
+    <div class="bg-gray-900 py-16 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl sm:text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Transparent pricing for laundry solutions
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-white">
+            Discover straightforward pricing for top-notch laundry services.
+            Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut
+            laborum.
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+        >
+          <div class="p-8 sm:p-10 lg:flex-auto">
+            <h3 class="text-2xl font-bold tracking-tight text-white">
+              Premium Laundry Membership
+            </h3>
+            <p class="mt-6 text-base leading-7 text-gray-300">
+              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque
+              amet indis perferendis blanditiis repellendus etur quidem
+              assumenda.
+            </p>
+            <div class="mt-10 flex items-center gap-x-4">
+              <h4 class="flex-none text-sm font-semibold leading-6 text-white">
+                What’s included
+              </h4>
+              <div class="h-px flex-auto bg-gray-100"></div>
+            </div>
+            <ul
+              role="list"
+              class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+            >
+              <li class="flex gap-x-3 text-white">
+                <i class="fas fa-users h-6 w-5 flex-none text-indigo-600"></i>
+                Access to exclusive laundry tips
+              </li>
+              <li class="flex gap-x-3 text-white">
+                <i class="fas fa-tshirt h-6 w-5 flex-none text-indigo-600"></i>
+                Member-only laundry resources
+              </li>
+              <li class="flex gap-x-3 text-white">
+                <i
+                  class="fas fa-calendar-alt h-6 w-5 flex-none text-indigo-600"
+                ></i>
+                Entry to annual laundry conference
+              </li>
+              <li class="flex gap-x-3 text-white">
+                <i class="fas fa-tshirt h-6 w-5 flex-none text-indigo-600"></i>
+                Official laundry enthusiast t-shirt
+              </li>
+            </ul>
+          </div>
+          <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div
+              class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+            >
+              <div class="mx-auto max-w-xs px-8">
+                <p class="text-base font-semibold text-gray-600">
+                  One-time payment for a laundry revolution
+                </p>
+                <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                  <span class="text-5xl font-bold tracking-tight text-gray-900"
+                    >$149</span
+                  >
+                  <span
+                    class="text-sm font-semibold leading-6 tracking-wide text-gray-600"
+                    >USD</span
+                  >
+                </p>
+                <a
+                  href="#"
+                  class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >Upgrade Now</a
+                >
+                <p class="mt-6 text-xs leading-5 text-gray-600">
+                  Invoices and receipts available for easy company reimbursement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <!-- === Partner Logo === -->
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">
+          Trusted by the world’s most innovative teams
+        </h2>
+        <div
+          class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+        >
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+            alt="Transistor"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+            alt="Reform"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+            alt="Tuple"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+            alt="SavvyCal"
+            width="158"
+            height="48"
+          />
+          <img
+            class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+            alt="Statamic"
+            width="158"
+            height="48"
+          />
+        </div>
+      </div>
+    </div>
 
+    <!-- === Laundry Newsletter === -->
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="max-w-xl lg:max-w-lg">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              Subscribe to our laundry updates.
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-gray-300">
+              Enhance your laundry experience with our latest insights. Duis
+              tempor incididunt dolore.
+            </p>
+            <div class="mt-6 flex max-w-md gap-x-4">
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <i class="fas fa-tshirt h-6 w-6 text-white"></i>
+              </div>
+              <dt class="mt-4 font-semibold text-white">Weekly laundry tips</dt>
+              <dd class="mt-2 leading-7 text-gray-400">
+                Discover non laboris consequat cupidatat laborum magna. Eiusmod
+                non irure cupidatat duis commodo amet.
+              </dd>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <i class="fas fa-ban h-6 w-6 text-white"></i>
+              </div>
+              <dt class="mt-4 font-semibold text-white">No laundry spam</dt>
+              <dd class="mt-2 leading-7 text-gray-400">
+                Experience officia excepteur ullamco ut sint duis proident non
+                adipisicing. Voluptate incididunt anim.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div
+        class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+    </div>
+
+    <!-- === Footer === -->
+    <!-- === Responsive Laundry Footer === -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center"
+      >
+        <div class="text-center lg:text-left mb-6 lg:mb-0">
+          <h3 class="text-xl font-bold">Stay Fresh Laundry</h3>
+          <p class="mt-2 text-sm">Your go-to for premium laundry services.</p>
+        </div>
+        <div class="text-center mb-6 lg:mb-0">
+          <h4 class="text-lg font-bold mb-2">Connect With Us</h4>
+          <div
+            class="flex items-center justify-center lg:justify-start space-x-4"
+          >
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center lg:text-right">
+          <h4 class="text-lg font-bold mb-2">Contact Us</h4>
+          <p class="text-sm">123 Laundry Lane, Fresh City</p>
+          <p class="text-sm">Email: info@stayfreshlaundry.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
