@@ -35,5 +35,6 @@
         menuOpenIcon.classList.add('hidden');
       }
     });
+    
   });
 
