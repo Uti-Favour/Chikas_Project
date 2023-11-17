@@ -1,10 +1,13 @@
-document.addEventListener('DOMContentLoaded', function(){
-  window.addEventListener("scroll", function () {
-    var navbar = document.getElementById("navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 0);
-  });
+document.addEventListener('DOMContentLoaded' , function(){
 
-  
- let hero =  document.getElementsByClassName("hero");
+  const mobileMenu = document.getElementByIdo('mobile-menu');
+  const menu = document.getElementById('user-menu-button');
+  const userMenuItem0 = document.getElementById('user-menu-item-0');
+  const userMenuItem1 = document.getElementById('user-menu-item-1');
+  const userMenuItem2 = document.getElementById('user-menu-item-2');
+
+
 });
+
+
 
