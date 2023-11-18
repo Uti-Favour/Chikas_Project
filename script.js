@@ -15,9 +15,9 @@
     function toggleMobileMenu() {
       const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
       mobileMenuButton.setAttribute('aria-expanded', !expanded);
-      mobileMenu.classList.toggle('hidden');
-      menuClosedIcon.classList.toggle('hidden');
-      menuOpenIcon.classList.toggle('hidden');
+      mobileMenu.classList.toggle('block');
+      menuClosedIcon.classList.toggle('block');
+      menuOpenIcon.classList.toggle('block');
     }
 
     // Toggle the mobile menu when clicking the image button
