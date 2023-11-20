@@ -38,3 +38,6 @@
     
   });
 
+
+
+  //Js booking function
