@@ -4,8 +4,12 @@
   const mobileMenu = document.getElementById('mobile-menu');
   const menuClosedIcon = document.getElementById('menu-closed-icon');
   const menuOpenIcon = document.getElementById('menu-open-icon');
+  const fadeInElement = document.querySelector('.fade-in')
+
+  
+      
  });
    
 
-    
+ 
   
