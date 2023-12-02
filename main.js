@@ -4,9 +4,18 @@
   const mobileMenu = document.getElementById('mobile-menu');
   const menuClosedIcon = document.getElementById('menu-closed-icon');
   const menuOpenIcon = document.getElementById('menu-open-icon');
-  const fadeInElement = document.querySelector('.fade-in')
 
-  
+
+//Menu open and close function
+  menuClosedIcon.addEventListener('click' , function(){
+
+  });
+
+menuOpenIcon.addEventListener('click' , function(){
+function openMenu(){
+    
+}
+});
       
  });
    
