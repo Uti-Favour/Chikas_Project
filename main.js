@@ -1,24 +1,12 @@
-// JavaScript for toggling mobile menu visibility
- document.addEventListener('DOMContentLoaded', function() {
+
+ 
+  // JavaScript for toggling mobile menu visibility
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuClosedIcon = document.getElementById('menu-closed-icon');
   const menuOpenIcon = document.getElementById('menu-open-icon');
 
-
-//Menu open and close function
-  menuClosedIcon.addEventListener('click' , function(){
-
-  });
-
 menuOpenIcon.addEventListener('click' , function(){
-function openMenu(){
-    
-}
+mobileMenu.classList.toggle('block');
 });
-      
- });
-   
 
- 
-  
